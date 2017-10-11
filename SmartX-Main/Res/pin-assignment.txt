@@ -1,0 +1,14 @@
+bd	office			13	OUTPUT
+kt	kitchen			12	OUTPUT
+er	employee room		9	OUTPUT
+mt	meeting room		3	OUTPUT
+br	bath room 		8	OUTPUT
+wr	waiting room 		7	OUTPUT
+
+Ros	kitchen			2	INPUT
+Rts	waiting room		14	INPUT
+Rtts	office			4	INPUT
+Rmrs	meeting room		5	INPUT
+
+
+buzzer 				22	OUTPUT

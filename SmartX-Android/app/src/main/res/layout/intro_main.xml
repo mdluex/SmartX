@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/splash_bg"
+    tools:context="mdluex.smartx.intro_main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pattern_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/patt_bg" />
+
+        <ImageView
+            android:id="@+id/Spalsh_Logo"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/intro_prog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            app:srcCompat="@drawable/smartx_splash" />
+
+        <ProgressBar
+            android:id="@+id/intro_prog"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:indeterminateTint="#ffffff" />
+
+        <TextView
+            android:id="@+id/tost_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Turn on Bluetooth"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/intro_prog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="123dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

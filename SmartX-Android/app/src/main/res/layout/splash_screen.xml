@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/splash_bg"
+    tools:context=".SplashScreen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pattern_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/patt_bg" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/Spalsh_Logo"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/smartx_splash" />
+
+            <RelativeLayout
+                android:id="@+id/conn_ttl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/splash_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/splash_ttl_conn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Connected"
+                    android:textAllCaps="true"
+                    android:textColor="#69f0ae"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/conn_splash"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/splash_ttl_conn"
+                    android:layout_alignTop="@+id/splash_ttl_conn"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/splash_ttl_conn"
+                    app:srcCompat="@drawable/connected_sign" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/srch_ttl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/splash_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:id="@+id/splash_ttl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Searching"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_splash"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/splash_ttl"
+                    android:layout_alignTop="@+id/splash_ttl"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/splash_ttl"
+                    android:indeterminate="false"
+                    android:indeterminateTint="#ffffff" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/splash_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/btn_splash_dis"
+                android:text="Control Center"
+                android:textAllCaps="false"
+                android:textColor="#383838"
+                android:textSize="20sp"
+                android:typeface="normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
