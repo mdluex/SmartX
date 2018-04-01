@@ -24,3 +24,6 @@ To make things easier we made a mobile application that allows you to control yo
 [Mohamed Sedeek Raslan](https://www.facebook.com/mohamed.sedek.568)
 
 [Khaled Elsayed Hassan](https://www.facebook.com/khaled.bicasso)
+
+# Supervised by:
+Dr. Mohamed Ameer
